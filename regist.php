@@ -19,8 +19,7 @@ fwrite($f, $nome.':');
 fwrite($f, $cognome.':');
 fwrite($f, $gender.':');
 fwrite($f, $email.':');
-fwrite($f, $password.'\n');
-
+fwrite($f, $pass.'\n');
 
 fclose($f);
 
