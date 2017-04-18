@@ -12,7 +12,7 @@
 
         <tr>
             <td><label>User: </label></td>
-            <td><input type="email" name="email" placeholder="Email" required/></td>
+            <td><input type="email" name="user" placeholder="Email" required/></td>
         </tr>
         <tr>
             <td><label>Password: </label></td>

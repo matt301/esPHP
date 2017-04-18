@@ -6,8 +6,19 @@
  * Time: 15:47
  */
 
+$user = $_POST['user'];
+$pass = $_POST['password'];
+
 $f =fopen("db.txt", "r");
-i=0;
-while (!feof($f))
-    while(fgets($f)!=':')
-        users[i] = fgets($f);
+tmp;
+while (!feof($f)){
+    tmp=fgets($f);
+    if($user===tmp){
+        tmp=fgets($f);
+        if(password_verify($password,tmp))
+            echo "Welcome! ". $user;
+        else
+            echo "REEEEEEEEEE";
+    }
+}
+
