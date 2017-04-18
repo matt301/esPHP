@@ -38,8 +38,8 @@
       <file leaf-file-name="regist.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/regist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="506">
+              <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -205,7 +205,7 @@
       <option name="presentableId" value="Default" />
       <updated>1492502608264</updated>
       <workItem from="1492502610908" duration="3570000" />
-      <workItem from="1492513687951" duration="2517000" />
+      <workItem from="1492513687951" duration="2653000" />
     </task>
     <task id="LOCAL-00001" summary="yhnbh">
       <created>1492503893156</created>
@@ -256,11 +256,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492522229214</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="bnjkbi">
+      <created>1492522945308</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1492522945308</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6087000" />
+    <option name="totallyTimeSpent" value="6223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -301,7 +308,8 @@
     <MESSAGE value="ajjdas" />
     <MESSAGE value="dadadasdad" />
     <MESSAGE value="dadadasdad\\xa" />
-    <option name="LAST_COMMIT_MESSAGE" value="dadadasdad\\xa" />
+    <MESSAGE value="bnjkbi" />
+    <option name="LAST_COMMIT_MESSAGE" value="bnjkbi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -350,8 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/regist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        <state relative-caret-position="506">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding />
         </state>
       </provider>
