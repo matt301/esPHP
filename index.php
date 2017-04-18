@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <title>Log IN</title>
@@ -18,6 +18,11 @@
             <td><label>Password: </label></td>
             <td><input type="password" name="password" placeholder="Password" required/></td>
         </tr>
+        <tr>\
+            <a><a href="form_reg.html">Non hai un accunt? Ragistrati qui</a></td>
+            <td></td>
+        </tr>
+
 
         <tr>
             <td><input type="submit" value="Invia" /></td>
