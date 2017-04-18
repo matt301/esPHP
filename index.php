@@ -25,8 +25,8 @@
 
 
         <tr>
-            <td><input type="submit" value="Invia" /></td>
-            <td><input type="reset" value="Cancella" /></td>
+            <td><input type="submit" value="Invia" /><input type="reset" value="Cancella" /></td>
+            <td></td>
         </tr>
     </table>
 
