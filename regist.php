@@ -19,13 +19,14 @@ fwrite($f, $nome.':');
 fwrite($f, $cognome.':');
 fwrite($f, $gender.':');
 fwrite($f, $email.':');
-fwrite($f, $pass.'\n');
+fwrite($f, $pass.'<br>');
 
 fclose($f);
 
 $f =fopen("db.txt", "r");
 while (!feof($f))
     echo fgets($f);
+
 fclose($f);
 
 ?>
