@@ -19,7 +19,7 @@
             <td><input type="password" name="password" placeholder="Password" required/></td>
         </tr>
         <tr>\
-            <a><a href="form_reg.html">Non hai un accunt? Ragistrati qui</a></td>
+            <a><a href="form_reg.html">Non hai un account? Ragistrati qui</a></td>
             <td></td>
         </tr>
 
