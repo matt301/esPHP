@@ -32,5 +32,6 @@ while (!feof($f))
         echo fgets($f);
 
 fclose($f);
+echo "<input type=button href='index.php'/>";
 
 ?>
