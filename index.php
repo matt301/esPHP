@@ -18,7 +18,7 @@
             <td><label>Password: </label></td>
             <td><input type="password" name="password" placeholder="Password" required/></td>
         </tr>
-        <tr>\
+        <tr>
             <td><a href="form_reg.html">Non hai un account? Ragistrati qui</a></td>
             <td></td>
         </tr>

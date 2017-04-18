@@ -12,7 +12,7 @@ $email = $_POST['email'];
 $pass = $_POST['password'];
 
 
-$f = fopen("private/db.php", 'a');
+$f = fopen("db.txt", 'a');
 if(!$f) die ("Errore nella operazione con il file");
 
 fwrite($f, "ciao" );
