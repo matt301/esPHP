@@ -15,14 +15,18 @@ $pass = $_POST['password'];
 $f = fopen("db.txt", 'a');
 if(!$f) die ("Errore nella operazione con il file");
 
-fwrite($f, $email );
+fwrite($f, $nome);
+fwrite($f, $cognome);
+fwrite($f, $gender);
+fwrite($f, $email);
+fwrite($f, $password);
 
 
 fclose($f);
 
 $f =fopen("db.txt", "r");
 while (!feof($f))
-    echo fgets($f);
+    echo fgets($f).'\n';
 fclose($f);
 
 ?>
