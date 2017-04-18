@@ -16,9 +16,13 @@ $f = fopen("db.txt", 'a');
 if(!$f) die ("Errore nella operazione con il file");
 
 fwrite($f, "ciao" );
-echo "dati";
+
 
 fclose($f);
 
+$f =fopen("db.txt", "r");
+while (!feof($f))
+    echo fgets($f);
+fclose($f);
 
 ?>
