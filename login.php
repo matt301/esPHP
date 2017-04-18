@@ -13,7 +13,7 @@ $f =fopen("db.txt", "r");
 tmp;
 while (!feof($f)){
     tmp=fgets($f);
-    if($user===tmp){
+    if($user==tmp){
         tmp=fgets($f);
         if(password_verify($password,tmp))
             echo "Welcome! ". $user;
