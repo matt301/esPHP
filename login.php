@@ -15,8 +15,11 @@ while (!feof($f)){
     tmp=fgets($f);
     if($user==tmp){
         tmp=fgets($f);
-        if(password_verify($password,tmp))
+        if(password_verify($password,tmp)){
             echo "Welcome! ". $user;
+            break;
+        }
+
         else
             echo "REEEEEEEEEE";
     }
