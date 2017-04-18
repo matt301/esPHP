@@ -29,6 +29,7 @@ fclose($f);
 
 $f =fopen("db.txt", "r");
 while (!feof($f))
+    while(fgets($f)!=':')
         echo fgets($f);
 
 fclose($f);

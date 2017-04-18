@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ceaccaf-c340-45a9-8f46-4095c6fb4a4b" name="Default" comment="">
+    <list default="true" id="3ceaccaf-c340-45a9-8f46-4095c6fb4a4b" name="Default" comment="bnjkbiD">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regist.php" afterPath="$PROJECT_DIR$/regist.php" />
     </list>
@@ -38,9 +39,21 @@
       <file leaf-file-name="regist.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/regist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            <state relative-caret-position="146">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding>
+                <element signature="e#6#86#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,6 +68,7 @@
       <list>
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/form_reg.html" />
+        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/regist.php" />
       </list>
     </option>
@@ -205,7 +219,7 @@
       <option name="presentableId" value="Default" />
       <updated>1492502608264</updated>
       <workItem from="1492502610908" duration="3570000" />
-      <workItem from="1492513687951" duration="2653000" />
+      <workItem from="1492513687951" duration="3068000" />
     </task>
     <task id="LOCAL-00001" summary="yhnbh">
       <created>1492503893156</created>
@@ -263,11 +277,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492522945308</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="bnjkbiD">
+      <created>1492523076855</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1492523076855</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6223000" />
+    <option name="totallyTimeSpent" value="6638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -309,7 +330,8 @@
     <MESSAGE value="dadadasdad" />
     <MESSAGE value="dadadasdad\\xa" />
     <MESSAGE value="bnjkbi" />
-    <option name="LAST_COMMIT_MESSAGE" value="bnjkbi" />
+    <MESSAGE value="bnjkbiD" />
+    <option name="LAST_COMMIT_MESSAGE" value="bnjkbiD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -340,14 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/form_reg.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -356,10 +370,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/regist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        <state relative-caret-position="146">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
