@@ -9,13 +9,14 @@
 $user = $_POST['user'];
 $pass = $_POST['password'];
 
-$f =fopen("db.txt", "r");
-tmp;
+$f = fopen("db.txt", "r");
+
 while (!feof($f)){
-    tmp=fgets($f);
-    if($user==tmp){
-        tmp=fgets($f);
-        if(password_verify($password,tmp)){
+    echo "ciao";
+
+    if($user==fgets($f)){
+
+        if(password_verify($pass,fgets($f))){
             echo "Welcome! ". $user;
             break;
         }
