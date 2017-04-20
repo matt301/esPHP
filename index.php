@@ -22,7 +22,10 @@
             <td colspan="2"><a href="form_reg.html">Non hai un account? Registrati qui</a></td>
             <td></td>
         </tr>
-
+        <tr>
+            <td><input type="checkbox" value="autologin" /> ricordami</td>
+            <td></td>
+        </tr>
 
         <tr>
             <td><input type="submit" value="Invia" /><input type="reset" value="Cancella" /></td>
