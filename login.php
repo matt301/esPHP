@@ -30,7 +30,7 @@ while (!feof($f)){
     }
 }
 
-
+$loginOK=true;
 
 if($loginOK){
     $_SESSION['user']= $user;
