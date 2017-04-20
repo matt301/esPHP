@@ -8,10 +8,17 @@
 session_start();
 ini_set("auto_detect_line_endings", true);
 
+//funzione che controlla la 'bontà' dei dati ricevuti in input
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 
-$user = $_POST['user'];
-$pass = $_POST['password'];
-$remeber = isset($_POST['autologin']) ? $_POST['autologin'] : 'n'; // = y se selezionato, altrimente é = n
+$user = test_input($_POST['user']);
+$pass = test_input($_POST['password']);
+$remeber = test_input(isset($_POST['autologin']) ? $_POST['autologin'] : 'n'); // = y se selezionato, altrimente é = n
 $loginOK = false;
 
 $f = fopen("db.txt", "r");

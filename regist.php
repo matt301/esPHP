@@ -5,11 +5,20 @@
  * Date: 06/04/2017
  * Time: 10:18
  */
-$nome = $_POST['nome'];
-$cognome = $_POST['cognome'];
-$gender = $_POST['gender'];
-$email = $_POST['email'];
-$pass = $_POST['password'];
+
+//funzione che controlla la 'bontà' dei dati ricevuti in input
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+$nome = test_input($_POST['nome']);
+$cognome = test_input($_POST['cognome']);
+$gender = test_input($_POST['gender']);
+$email = test_input($_POST['email']);
+$pass = test_input($_POST['password']);
 
 $pass_hash = password_hash($pass, PASSWORD_BCRYPT);
 
@@ -26,12 +35,13 @@ fwrite($f, "*<br>");
 
 
 fclose($f);
-
+/*
 $f =fopen("db.txt", "r");
 while (!feof($f))
         echo fgets($f);
+*/
 
 fclose($f);
-echo "<a href='index.php'> Log IN </a>";
+echo "<br>Utente registrato <a href='index.php'> Log in </a>";
 
 ?>
