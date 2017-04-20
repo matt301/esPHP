@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -11,13 +9,9 @@
 <body>
 <?php
 session_start();
-if(!isset($_COOKIE['user'])) {
+if(isset($_COOKIE['user'])) {
     $_SESSION['user'] = $_COOKIE['user'];
     header('Location:privata.php');
-else{
-
-    }
-}
 ?>
 
 <h2>Ciao</h2><br>
