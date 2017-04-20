@@ -14,8 +14,8 @@ $pass = $_POST['password'];
 $loginOK = false;
 
 $f = fopen("db.txt", "r");
-$tmp[]=explode(" ", fgets($f));
-echo $tmp[0];
+$tmp[]=explode(":", fgets($f));
+echo $tmp[1];
 /*
 while (!feof($f)){
 
