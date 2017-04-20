@@ -12,7 +12,8 @@ $user = $_POST['user'];
 $pass = $_POST['password'];
 
 $f = fopen("db.txt", "r");
-
+echo fgets($f);
+/*
 while (!feof($f)){
 
     if($user==fgets($f)){
@@ -27,3 +28,4 @@ while (!feof($f)){
     }
 }
 
+*/
