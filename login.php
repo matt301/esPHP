@@ -11,7 +11,7 @@ ini_set("auto_detect_line_endings", true);
 
 $user = $_POST['user'];
 $pass = $_POST['password'];
-$remeber = $_POST['autologin'];
+$remeber = isset($_POST['autologin']) ? $_POST['autologin'] : 'n'; // = y se selezionato, altrimente é = n
 $loginOK = false;
 
 $f = fopen("db.txt", "r");
@@ -24,9 +24,6 @@ while (!feof($f)){
             $loginOK=true;
             break;
         }
-
-        else
-            echo "REEEEEEEEEE";
     }
 }
 
@@ -36,11 +33,13 @@ if($loginOK){
     $_SESSION['user']= $user;
     $_SESSION['pass']= $pass;
 
-    //controllare se autologin é selezionato
+    //se autologin é selezionato
+    if($remeber=='y'){
+        $cookie_name='user';
+        $cookie_value = $user;
+        setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+    }
 
-    $cookie_name='user';
-    $cookie_value = $user;
-    setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
     header('Location:privata.php');
 }
 else{

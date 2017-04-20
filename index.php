@@ -27,7 +27,7 @@ echo '<h2>Ciao</h2><br>
             <td><input type="password" name="password" placeholder="Password" required/></td>
         </tr>
         <tr>
-            <td><input type="checkbox" name="autologin" /> ricordami</td>
+            <td><input type="checkbox" name="autologin" value="y" /> ricordami</td>
             <td></td>
         </tr>
         <tr>
