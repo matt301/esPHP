@@ -5,14 +5,16 @@
  * Date: 18/04/17
  * Time: 15:47
  */
+session_start();
 ini_set("auto_detect_line_endings", true);
 
 
 $user = $_POST['user'];
 $pass = $_POST['password'];
+$loginOK = false;
 
 $f = fopen("db.txt", "r");
-$tmp[]=fgets($f);
+$tmp[]=explode(" ", fgets($f));
 echo $tmp[0];
 /*
 while (!feof($f)){
@@ -29,4 +31,13 @@ while (!feof($f)){
     }
 }
 
+
+
+if($loginOK){
+    $_SESSION['user']= $user;
+    $_SESSION['pass']= $pass;
+}
+else{
+    echo "Impossibile accedere all'area riservata. Controlla le tue credenziali";
+}
 */
