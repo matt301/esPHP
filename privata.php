@@ -11,5 +11,5 @@ if(!isset($_SESSION["user"])){
     header('Location: index.php');
 }
 else{
-     echo "ciao". $_SESSION["user"]. " questa pagina é riservata agli utenti registrati";
+     echo "Ciao". $_SESSION["user"]. " questa pagina é riservata agli utenti registrati";
 }
