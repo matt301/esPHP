@@ -12,7 +12,8 @@ $user = $_POST['user'];
 $pass = $_POST['password'];
 
 $f = fopen("db.txt", "r");
-echo fgets($f);
+$tmp[]=fgets($f);
+echo $tmp[0];
 /*
 while (!feof($f)){
 
