@@ -6,6 +6,13 @@
 
 </head>
 <body>
+<?php
+    session_start();
+    if(!isset($_COOKIE['user'])) {
+        $_SESSION['user'] = $_COOKIE['user'];
+        header('Location:privata.php');
+    }
+?>
 <h2>Ciao</h2><br>
 <form action="login.php" method="post" enctype="multipart/form-data" name="formlog">
     <table >
@@ -19,7 +26,7 @@
             <td><input type="password" name="password" placeholder="Password" required/></td>
         </tr>
         <tr>
-            <td><input type="checkbox" value="autologin" /> ricordami</td>
+            <td><input type="checkbox" name="autologin" /> ricordami</td>
             <td></td>
         </tr>
         <tr>
