@@ -22,7 +22,7 @@ fwrite($f, $pass_hash.'<br>');
 fwrite($f, $nome.'<br>');
 fwrite($f, $cognome.'<br>');
 fwrite($f, $gender.'<br>');
-fwrite($f, ":<br>");
+fwrite($f, "*<br>");
 
 
 fclose($f);
