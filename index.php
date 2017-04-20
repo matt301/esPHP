@@ -12,9 +12,9 @@ session_start();
 if(isset($_COOKIE['user'])) {
     $_SESSION['user'] = $_COOKIE['user'];
     header('Location:privata.php');
-?>
-
-<h2>Ciao</h2><br>
+}
+else{
+echo '<h2>Ciao</h2><br>
 <form action="login.php" method="post" enctype="multipart/form-data" name="formlog">
     <table >
 
@@ -44,4 +44,10 @@ if(isset($_COOKIE['user'])) {
 </form>
 
 </body>
-</html>
+</html>';
+
+
+
+}
+?>
+
