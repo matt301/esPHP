@@ -19,11 +19,11 @@
             <td><input type="password" name="password" placeholder="Password" required/></td>
         </tr>
         <tr>
-            <td colspan="2"><a href="form_reg.html">Non hai un account? Registrati qui</a></td>
+            <td><input type="checkbox" value="autologin" /> ricordami</td>
             <td></td>
         </tr>
         <tr>
-            <td><input type="checkbox" value="autologin" /> ricordami</td>
+            <td colspan="2"><a href="form_reg.html">Non hai un account? Registrati qui</a></td>
             <td></td>
         </tr>
 
