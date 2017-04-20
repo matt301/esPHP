@@ -1,11 +1,5 @@
 
-<?php
-session_start();
-if(!isset($_COOKIE['user'])) {
-    $_SESSION['user'] = $_COOKIE['user'];
-    header('Location:privata.php');
-}
-?>
+
 
 <!DOCTYPE html>
 <html lang="it">
@@ -15,6 +9,16 @@ if(!isset($_COOKIE['user'])) {
 
 </head>
 <body>
+<?php
+session_start();
+if(!isset($_COOKIE['user'])) {
+    $_SESSION['user'] = $_COOKIE['user'];
+    header('Location:privata.php');
+else{
+
+    }
+}
+?>
 
 <h2>Ciao</h2><br>
 <form action="login.php" method="post" enctype="multipart/form-data" name="formlog">
