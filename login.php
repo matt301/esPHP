@@ -20,7 +20,7 @@ while (!feof($f)){
     if($user==fgets($f)){
 
         if(password_verify($pass,fgets($f))){
-            echo "Welcome! ". $user;
+            $loginOK=true;
             break;
         }
 
@@ -34,6 +34,7 @@ while (!feof($f)){
 if($loginOK){
     $_SESSION['user']= $user;
     $_SESSION['pass']= $pass;
+    header('Location:privata.php');
 }
 else{
     echo "Impossibile accedere all'area riservata. Controlla le tue credenziali";
