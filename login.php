@@ -17,9 +17,17 @@ $remeber = test_input(isset($_POST['autologin']) ? $_POST['autologin'] : 'n'); /
 $loginOK = false;
 
 $f = fopen("db.txt", "r");
-echo fgets($f);
 //$tmp = explode("*", fgets($f,-1));
 fclose($f);
+
+while(!feof($f)){
+    if($user==fgets($f)){
+        if($pass==fgets($f)){
+            $loginOK=true;
+            break;
+        }
+    }
+}
 
 //$tmplength = count($tmp);
 
