@@ -23,6 +23,9 @@ $f = fopen("db.txt", "r");
 while(!feof($f)){
     $u=fgets($f);
     $p=fgets($f);
+    $n=fgets($f);
+    $c=fgets($f);
+    $g=fgets($f);
     if($user==$u){
         if(password_verify($pass,$p)){
             $loginOK=true;
