@@ -22,6 +22,8 @@ $tmp = explode("*",fgets($f));
 $tmplength = count($tmp);
 
 echo "lunghezza ".$tmplength. "<br>";
+echo $tmp[5]. "<br>";
+
 
 if($user==$tmp[0]){
     if(password_verify($pass,$tmp[1])){
