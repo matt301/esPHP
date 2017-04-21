@@ -18,8 +18,7 @@ $loginOK = false;
 
 $f = fopen("db.txt", "r");
 //$tmp = explode("*", fgets($f,-1));
-echo fgets($f);
-echo fgets($f);
+
 
 while(!feof($f)){
     $u=test_input(fgets($f));
