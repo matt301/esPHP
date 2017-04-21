@@ -24,7 +24,7 @@ fwrite($f, $email."*");
 fwrite($f, $pass_hash."*");
 fwrite($f, $nome."*");
 fwrite($f, $cognome."*");
-fwrite($f, $gender."*");
+fwrite($f, $gender."*<br>");
 
 
 
