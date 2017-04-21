@@ -21,8 +21,8 @@ $f = fopen("db.txt", "r");
 fclose($f);
 
 while(!feof($f)){
-    if($user==fgets($f)){
-        if($pass==fgets($f)){
+    if(fgets($f)==$user){
+        if(password_verify($pass,fgets($f))){
             $loginOK=true;
             break;
         }
