@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Matteo
- * Date: 18/04/17
- * Time: 15:47
- */
+
 session_start();
 ini_set("auto_detect_line_endings", true);
 

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: matteo
- * Date: 06/04/2017
- * Time: 10:18
- */
 
 //funzione che controlla la 'bontà' dei dati ricevuti in input
 function test_input($data) {
@@ -26,12 +20,12 @@ $pass_hash = password_hash($pass, PASSWORD_BCRYPT);
 $f = fopen("db.txt", 'a');
 if(!$f) die ("Errore nella operazione con il file");
 
-fwrite($f, $email.'<br>');
-fwrite($f, $pass_hash.'<br>');
-fwrite($f, $nome.'<br>');
-fwrite($f, $cognome.'<br>');
-fwrite($f, $gender.'<br>');
-fwrite($f, "*<br>");
+fwrite($f, $email.' <br>');
+fwrite($f, $pass_hash.' <br>');
+fwrite($f, $nome.' <br>');
+fwrite($f, $cognome.' <br>');
+fwrite($f, $gender.' <br>');
+fwrite($f, "* <br>");
 
 
 fclose($f);
