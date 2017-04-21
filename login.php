@@ -18,7 +18,7 @@ $loginOK = false;
 
 $f = fopen("db.txt", "r");
 
-$tmp = explode("*",fgets($f));
+$tmp = explode("*",fgets($f,-1));
 fclose($f);
 
 $tmplength = count($tmp);
