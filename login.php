@@ -18,7 +18,7 @@ $loginOK = false;
 
 $f = fopen("db.txt", "r");
 
-$tmp[] = explode(" ",fgets($f));
+$tmp = array(explode(" ",fgets($f)));
 echo $tmp[0];
 
 
