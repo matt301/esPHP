@@ -19,7 +19,8 @@ $loginOK = false;
 $f = fopen("db.txt", "r");
 
 $tmp = explode("*",fgets($f));
-echo $tmp[0];
+for($i=0;i<sizeof($tmp);$i++)
+    echo $tmp[i];
 
 
 /*
