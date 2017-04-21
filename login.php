@@ -17,8 +17,6 @@ $remeber = test_input(isset($_POST['autologin']) ? $_POST['autologin'] : 'n'); /
 $loginOK = false;
 
 $f = fopen("db.txt", "r");
-//$tmp = explode("*", fgets($f,-1));
-
 
 while(!feof($f)){
     $u=test_input(fgets($f));
@@ -37,38 +35,6 @@ while(!feof($f)){
 
 fclose($f);
 
-//$tmplength = count($tmp);
-
-//echo "lunghezza ".$tmplength. "<br>";
-/*
-
-if($user==$tmp[5]){
-    if(password_verify($pass,$tmp[6])){
-        $loginOK=true;
-    }
-}
-else{
-    for($j=5;$j<$tmplength;$j=$j+5){
-        if($user==$tmp[$j]){
-            echo "siiiii";
-
-            for($k=6;$k<$tmplength;$k=$k+5){
-                if(password_verify($pass,$tmp[$k])){
-                    $loginOK=true;
-                    break;
-                }
-                else{
-                    break;
-                }
-            }
-
-        }
-    }
-}
-
-
-*/
-
 if($loginOK){
     $_SESSION['user']= $user;
     $_SESSION['pass']= $pass;
@@ -85,3 +51,4 @@ if($loginOK){
 else{
     echo "Impossibile accedere all'area riservata. Controlla le tue credenziali";
 }
+
