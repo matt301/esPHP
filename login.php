@@ -22,7 +22,7 @@ $tmp = explode("*",fgets($f));
 $tmplength = count($tmp);
 for($i=0; $i<$tmplength;$i++)
     echo $tmp[$i]. "<br>";
-
+echo $tmplength. "<br>";
 /*
 for($j=0;$j<$tmplength;$j=$j+5){
     if($user == $tmp[$j]){
