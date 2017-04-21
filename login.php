@@ -23,8 +23,10 @@ $tmplength = count($tmp);
 $i=0;
 
 while($i<$tmplength){
-    for($j=0;$j<$tmplength;$j+6){
+    for($j=0;$j<$tmplength;$j=$j+6){
         if($user == $tmp[$j]){
+            echo "siiiii";
+            /*
             for($k=1;$k<$tmplength;$k+6){
                 if($pass == $tmp[$k]){
                     $loginOK=true;
@@ -34,6 +36,7 @@ while($i<$tmplength){
                     break;
                 }
             }
+            */
         }
     }
     $i++;
