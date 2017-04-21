@@ -20,10 +20,10 @@ $pass_hash = password_hash($pass, PASSWORD_BCRYPT);
 $f = fopen("db.txt", 'a');
 if(!$f) die ("Errore nella operazione con il file");
 
-fwrite($f, $email."*<br>");
-fwrite($f, $pass_hash.":*<br>");
-fwrite($f, $nome."*<br>");
-fwrite($f, $cognome."*<br>");
+fwrite($f, $email."*");
+fwrite($f, $pass_hash."*");
+fwrite($f, $nome."*");
+fwrite($f, $cognome."*");
 fwrite($f, $gender."*<br>");
 
 
