@@ -20,15 +20,20 @@ $f = fopen("db.txt", "r");
 
 $tmp = explode("*",fgets($f));
 $tmplength = count($tmp);
-for($i=0; $i<$tmplength;$i++)
-    echo $tmp[5]. "o<br>";
-echo $tmplength;
-/*
-for($j=0;$j<$tmplength;$j=$j+5){
-    if($user == $tmp[$j]){
-        echo "siiiii";
 
-        for($k=1;$k<$tmplength;$k+5){
+echo "lunghezza ".$tmplength. "<br>";
+
+if($user==$tmp[0]){
+    if($pass==$tmp[1]){
+        $loginOK=true;
+    }
+}
+else{
+    for($j=6;$j<$tmplength;$j=$j+5){
+        if($user == $tmp[$j]){
+            echo "siiiii";
+
+            for($k=7;$k<$tmplength;$k=$k+5){
                 if($pass == $tmp[$k]){
                     $loginOK=true;
                     break;
@@ -38,9 +43,14 @@ for($j=0;$j<$tmplength;$j=$j+5){
                 }
             }
 
+        }
     }
 }
- */
+
+
+
+
+
 
 
 if($loginOK){
