@@ -19,22 +19,25 @@ $loginOK = false;
 $f = fopen("db.txt", "r");
 
 $tmp = explode("*",fgets($f));
-echo $tmp[7];
-
-
-/*
-while (!feof($f)){
-
-    if($user==fgets($f)){
-
-        if(password_verify($pass,fgets($f))){
-            $loginOK=true;
-            break;
+$tmplength = count($tmp);
+$i=0;
+while($i<$tmplength){
+    for($j=0;;$j+6){
+        if($user == $tmp[$j]){
+            for($k=1;;$k+6){
+                if($pass == $tmp[$k]){
+                    $loginOK=true;
+                    break;
+                }
+                else{
+                    break;
+                }
+            }
         }
     }
+    $i++;
 }
 
-*/
 
 if($loginOK){
     $_SESSION['user']= $user;
