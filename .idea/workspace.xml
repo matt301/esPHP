@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ceaccaf-c340-45a9-8f46-4095c6fb4a4b" name="Default" comment="lalala">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regist.php" afterPath="$PROJECT_DIR$/regist.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,20 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regist.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="regist.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/regist.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
-              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
+            <state relative-caret-position="713">
               <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
               <folding />
             </state>
@@ -85,8 +84,8 @@
         <option value="$PROJECT_DIR$/form_reg.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/privata.php" />
-        <option value="$PROJECT_DIR$/regist.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/regist.php" />
       </list>
     </option>
   </component>
@@ -349,14 +348,7 @@
       <workItem from="1492513687951" duration="3969000" />
       <workItem from="1492590884647" duration="2081000" />
       <workItem from="1492678541719" duration="7238000" />
-      <workItem from="1492759660960" duration="7389000" />
-    </task>
-    <task id="LOCAL-00017" summary="bv">
-      <created>1492596009469</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1492596009469</updated>
+      <workItem from="1492759660960" duration="7747000" />
     </task>
     <task id="LOCAL-00018" summary="vvv">
       <created>1492678601247</created>
@@ -694,11 +686,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492768217846</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="lalala">
+      <created>1492768535424</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1492768535424</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24247000" />
+    <option name="totallyTimeSpent" value="24605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -956,18 +955,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/regist.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="713">
+          <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/regist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+        <state relative-caret-position="232">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>
