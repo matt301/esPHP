@@ -28,6 +28,8 @@ while(!feof($f)){
     $c=fgets($f);
     $g=fgets($f);
     echo "user= ".$user. "u= ".$u;
+    echo "p= ".$p;
+    echo "n= ".$n;
     if($user==$u){
         echo "tutto ok";
         //if(password_verify($pass,$p)){
