@@ -29,11 +29,7 @@ fwrite($f, $gender."\n");
 
 
 fclose($f);
-/*
-$f =fopen("db.txt", "r");
-while (!feof($f))
-        echo fgets($f);
-*/
+
 
 fclose($f);
 echo "<br>Utente registrato <a href='index.php'> Log in </a>";

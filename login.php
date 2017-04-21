@@ -17,6 +17,7 @@ $remeber = test_input(isset($_POST['autologin']) ? $_POST['autologin'] : 'n'); /
 $loginOK = false;
 
 $f = fopen("db.txt", "r");
+$n="";
 
 while(!feof($f)){
     $u=test_input(fgets($f));
@@ -38,6 +39,7 @@ fclose($f);
 if($loginOK){
     $_SESSION['user']= $user;
     $_SESSION['pass']= $pass;
+    $_SESSION['name']= $n;
 
     //se autologin é selezionato
     if($remeber=='y'){
