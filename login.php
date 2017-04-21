@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-ini_set("auto_detect_line_endings", true);
+//ini_set("auto_detect_line_endings", true);
 
 //funzione che controlla la 'bontà' dei dati ricevuti in input
 function test_input($data) {
@@ -17,7 +17,8 @@ $remeber = test_input(isset($_POST['autologin']) ? $_POST['autologin'] : 'n'); /
 $loginOK = false;
 
 $f = fopen("db.txt", "r");
-
+echo fgets($f);
+/*
 while (!feof($f)){
 
     if($user==fgets($f)){
@@ -29,7 +30,7 @@ while (!feof($f)){
     }
 }
 
-
+*/
 
 if($loginOK){
     $_SESSION['user']= $user;
