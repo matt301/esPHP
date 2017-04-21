@@ -22,19 +22,16 @@ $f = fopen("db.txt", "r");
 
 while(!feof($f)){
     $u=test_input(fgets($f));
-    $p=fgets($f);
-    $n=fgets($f);
-    $c=fgets($f);
-    $g=fgets($f);
-    echo "user= ".$user. "u= ".$u;
-    echo "p= ".$p;
-    echo "n= ".$n;
+    $p=test_input(fgets($f));
+    $n=test_input(fgets($f));
+    $c=test_input(fgets($f));
+    $g=test_input(fgets($f));
+
     if($user==$u){
-        echo "tutto ok";
-        //if(password_verify($pass,$p)){
+        if(password_verify($pass,$p)){
             $loginOK=true;
             break;
-        //}
+        }
     }
 }
 
