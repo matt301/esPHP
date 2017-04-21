@@ -19,16 +19,15 @@ $loginOK = false;
 $f = fopen("db.txt", "r");
 
 $tmp = explode("*",fgets($f));
+fclose($f);
+
 $tmplength = count($tmp);
 
 echo "lunghezza ".$tmplength. "<br>";
-echo $tmp[5]. "<br>";
-echo $tmp[6]. "<br>";
-echo $tmp[7]. "<br>";echo $tmp[8]. "<br>";echo $tmp[9]. "<br>";echo $tmp[10]. "<br>";
 
 
-if($user==$tmp[0]){
-    if(password_verify($pass,$tmp[1])){
+if($user==$tmp[5]){
+    if(password_verify($pass,$tmp[6])){
         $loginOK=true;
     }
 }
