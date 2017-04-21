@@ -21,7 +21,7 @@ $f = fopen("db.txt", "r");
 $tmp = explode("*",fgets($f));
 $tmplength = count($tmp);
 for($i=0; $i<$tmplength;$i++)
-    echo $tmp[$i];
+    echo $tmp[$i]. "<br>";
 
 /*
 for($j=0;$j<$tmplength;$j=$j+5){
