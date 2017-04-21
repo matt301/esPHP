@@ -24,7 +24,7 @@ $tmplength = count($tmp);
 echo "lunghezza ".$tmplength. "<br>";
 
 if($user==$tmp[0]){
-    if($pass==$tmp[1]){
+    if(password_verify($pass,$tmp[1])){
         $loginOK=true;
     }
 }
@@ -34,7 +34,7 @@ else{
             echo "siiiii";
 
             for($k=7;$k<$tmplength;$k=$k+5){
-                if($pass == $tmp[$k]){
+                if(password_verify($pass,$tmp[$k])){
                     $loginOK=true;
                     break;
                 }
@@ -46,9 +46,6 @@ else{
         }
     }
 }
-
-
-
 
 
 
