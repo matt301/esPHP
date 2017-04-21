@@ -20,13 +20,13 @@ $f = fopen("db.txt", "r");
 
 $tmp = explode("*",fgets($f));
 $tmplength = count($tmp);
+echo $tmplength;
 
-
-for($j=0;$j<$tmplength;$j=$j+6){
+for($j=0;$j<$tmplength;$j=$j+5){
     if($user == $tmp[$j]){
         echo "siiiii";
         /*
-        for($k=1;$k<$tmplength;$k+6){
+        for($k=1;$k<$tmplength;$k+5){
                 if($pass == $tmp[$k]){
                     $loginOK=true;
                     break;
