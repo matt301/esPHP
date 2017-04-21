@@ -28,6 +28,7 @@ while(!feof($f)){
     $c=fgets($f);
     $g=fgets($f);
     if($user==$u){
+        echo "tutto ok";
         //if(password_verify($pass,$p)){
             $loginOK=true;
             break;
