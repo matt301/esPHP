@@ -23,6 +23,8 @@ $tmplength = count($tmp);
 
 echo "lunghezza ".$tmplength. "<br>";
 echo $tmp[5]. "<br>";
+echo $tmp[6]. "<br>";
+echo $tmp[7]. "<br>";echo $tmp[8]. "<br>";echo $tmp[9]. "<br>";echo $tmp[10]. "<br>";
 
 
 if($user==$tmp[0]){
@@ -32,7 +34,7 @@ if($user==$tmp[0]){
 }
 else{
     for($j=5;$j<$tmplength;$j=$j+5){
-        if($user == $tmp[$j]){
+        if($user==$tmp[$j]){
             echo "siiiii";
 
             for($k=6;$k<$tmplength;$k=$k+5){
