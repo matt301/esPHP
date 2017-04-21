@@ -20,7 +20,7 @@ $f = fopen("db.txt", "r");
 //$tmp = explode("*", fgets($f,-1));
 echo fgets($f);
 echo fgets($f);
-/*
+
 while(!feof($f)){
     $u=fgets($f);
     $p=fgets($f);
@@ -28,13 +28,13 @@ while(!feof($f)){
     $c=fgets($f);
     $g=fgets($f);
     if($user==$u){
-        if(password_verify($pass,$p)){
+        //if(password_verify($pass,$p)){
             $loginOK=true;
             break;
-        }
+        //}
     }
 }
-*/
+
 fclose($f);
 
 //$tmplength = count($tmp);
