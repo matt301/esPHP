@@ -17,14 +17,14 @@ $remeber = test_input(isset($_POST['autologin']) ? $_POST['autologin'] : 'n'); /
 $loginOK = false;
 
 $f = fopen("db.txt", "r");
-
-$tmp = explode("*",fgets($f,-1));
+echo fgets($f);
+//$tmp = explode("*", fgets($f,-1));
 fclose($f);
 
-$tmplength = count($tmp);
+//$tmplength = count($tmp);
 
-echo "lunghezza ".$tmplength. "<br>";
-
+//echo "lunghezza ".$tmplength. "<br>";
+/*
 
 if($user==$tmp[5]){
     if(password_verify($pass,$tmp[6])){
@@ -51,7 +51,7 @@ else{
 }
 
 
-
+*/
 
 if($loginOK){
     $_SESSION['user']= $user;
