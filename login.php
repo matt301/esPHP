@@ -29,11 +29,11 @@ if($user==$tmp[0]){
     }
 }
 else{
-    for($j=6;$j<$tmplength;$j=$j+5){
+    for($j=5;$j<$tmplength;$j=$j+5){
         if($user == $tmp[$j]){
             echo "siiiii";
 
-            for($k=7;$k<$tmplength;$k=$k+5){
+            for($k=6;$k<$tmplength;$k=$k+5){
                 if(password_verify($pass,$tmp[$k])){
                     $loginOK=true;
                     break;
