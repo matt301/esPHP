@@ -22,7 +22,7 @@ echo fgets($f);
 echo fgets($f);
 
 while(!feof($f)){
-    $u=fgets($f);
+    $u=test_input(fgets($f));
     $p=fgets($f);
     $n=fgets($f);
     $c=fgets($f);
