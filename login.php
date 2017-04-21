@@ -18,7 +18,7 @@ $loginOK = false;
 
 $f = fopen("db.txt", "r");
 //$tmp = explode("*", fgets($f,-1));
-fclose($f);
+
 
 while(!feof($f)){
     if(fgets($f)==$user){
@@ -28,7 +28,7 @@ while(!feof($f)){
         }
     }
 }
-
+fclose($f);
 //$tmplength = count($tmp);
 
 //echo "lunghezza ".$tmplength. "<br>";
